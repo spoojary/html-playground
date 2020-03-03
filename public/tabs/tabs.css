@@ -1,0 +1,29 @@
+.tabs-wrapper .tabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.tabs > div {
+  padding: 10px;
+}
+
+.tabs > div.active {
+  border-top: black 1px solid;
+  border-left: black 1px solid;
+  border-right: black 1px solid;
+}
+
+.tabs-container {
+  width: 400px;
+  height: auto;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.tabs-container > div {
+  display: none;
+}
+
+.tabs-container > div.active {
+  display: block;
+}

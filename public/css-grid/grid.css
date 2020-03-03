@@ -1,9 +1,34 @@
 .page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 100px auto 100px;
+}
+
+.side-bar {
+  background-color: plum;
+}
+
+.right-side-bar {
+  background-color: violet;
+}
+
+.header {
+  grid-column: 1/4;
+  background-color: teal;
+}
+
+.footer {
+  grid-column: 1/4;
+  background-color: burlywood;
+}
+
+.main-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 400px; /* 100vh; */
 }
+
 .grid {
   display: inline-grid;
   grid-template-columns: repeat(3, 80px);
